@@ -4138,3 +4138,15 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 302ms (Views: 281.3ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/posts/24/edit" for 76.124.168.60 at 2020-07-09 21:38:56 +0000
+Cannot render console from 76.124.168.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (15.4ms)
+  Rendered posts/edit.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 254ms (Views: 230.0ms | ActiveRecord: 0.8ms)
+
+
