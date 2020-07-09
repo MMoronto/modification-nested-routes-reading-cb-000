@@ -4563,3 +4563,15 @@ Redirected to http://142.93.113.210:57277/posts/26
 Completed 302 Found in 27ms (ActiveRecord: 6.7ms)
 
 
+Started GET "/posts/26" for 76.124.168.60 at 2020-07-09 22:03:34 +0000
+Cannot render console from 76.124.168.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mAuthor Load (0.1ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 263ms (Views: 242.7ms | ActiveRecord: 1.4ms)
+
+
