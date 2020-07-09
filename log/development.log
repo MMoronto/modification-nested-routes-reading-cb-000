@@ -4612,3 +4612,15 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 279ms (Views: 250.3ms | ActiveRecord: 1.4ms)
 
 
+Started POST "/posts" for 76.124.168.60 at 2020-07-09 22:19:18 +0000
+Cannot render console from 76.124.168.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"63BnaXxaOjsQtL1Y4tJM/ZSm1aaI3LNM+z/s0uVJQJa/xTNnWTGkQpcg5vIeFofEryXLHBqkFMpxPYt09xFazA==", "post"=>{"author_id"=>"11", "title"=>"lax and relax", "description"=>"aaaaaa bbbbbbbb ccccccc  ddddddd"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at", "author_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Lax And Relax"], ["description", "aaaaaa bbbbbbbb ccccccc  ddddddd"], ["created_at", "2020-07-09 22:19:18.587822"], ["updated_at", "2020-07-09 22:19:18.587822"], ["author_id", 11]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://142.93.113.210:57277/posts/27
+Completed 302 Found in 34ms (ActiveRecord: 12.7ms)
+
+
